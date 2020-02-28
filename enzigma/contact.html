@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<style>
+
+body 
+{
+background-image:url('newimage.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h1{
+    color: white;
+    font-family:serif;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 
+    50px;
+
+}
+h3
+{
+  color: white;
+  font-family: sans-serif;
+  margin-left:600px;
+}
+h4{
+  color:powderblue;
+  font-family: Arial;
+  margin-left: 150px;
+}
+
+
+#insta
+{
+  color: red;
+  margin-left: 500px;
+}
+
+#git
+{
+  color:darkgray;
+  margin-left: 50px;
+}
+
+#linked
+{
+  color:blue;
+  margin-left: 500px;
+
+}
+
+#whats
+{
+  color:green;
+  margin-left: 50px;
+}
+
+</style>
+
+<p class="text-center">
+   <h1>Get in Touch</h1>  
+   <h4>If you have anything to say, feel free to ask</h4>
+   <h4>IF you didnt got the reply, i might just be busy in</h4>
+   <h4>My office work</h4>
+   <h4> But i ll soon get back to you as soon as possible</h4>
+   <h4>Thats a promise</h4>
+   <h3>Find Aarti Elsewhere</h3>
+</p>
+
+<div class="container">
+  <ul class="list-inline">
+    <li><a id="insta" href="#" data-toggle="tooltip" data-placement="tooltip" title="aarti.g.j">Instagram</a></li>
+    <li><a id="git" href="#" data-toggle="tooltip" data-placement="tooltip" title="aarti.g.j">github</a></li>
+    <br>
+    <li><a id="linked" href="#" data-toggle="tooltip" data-placement="tooltip" title="Arti Jibal!">LinkedIn</a></li>
+    <li><a id="whats" href="#" data-toggle="tooltip" data-placement="tooltip" title="Ping Me You have my number">Whatsaap</a></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+
+</body>
+</html>

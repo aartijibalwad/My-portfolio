@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+
+<h2><center>Are you ready to share</center></h1>
+<h2><center>Some goodness, some Badness, The worstness offcourse....</center></h1>
+<h2><center>Now just go down</center></h1>
+
+	<style type="text/css">
+
+			body{
+					background-image: url(image1.jpg);
+					background-size: cover;
+					background-attachment:fixed;
+
+			}
+			.content{
+				background: white;
+				width: 50px;
+				padding: 10px;
+				margin: 25px auto;
+				font-family: calibri;
+			}
+
+	</style>
+<script>
+function validateForm() 
+{
+  var x = document.forms["myForm"]["Firstname"].value;
+  var a = document.forms["myForm"]["Fonnumber"].value;
+
+  if (x == "")
+   {
+    alert("Name must be filled out");
+    return false;
+   }
+
+  if(a.length!=10)
+  {
+  	alert("Number should be of 10 digit only");
+  	return false;
+  }  
+}
+</script>
+</head>
+
+
+<body>
+
+
+
+
+</marquee>
+<form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+
+	Full Name :-<input type="text" name="Firstname"></br></br>
+	Zodaic sign :-<input type="text" name="Zsign"></br></br>
+	phonenumber :-<input type="text" name="Fonnumber"></br></br>
+
+	<p style="margin-left:4.5em">3 Fears :-<input type="text" name="fear"></br></p>
+	<p style="margin-left:4.5em">Your Nick name :-<input type="text" name="under"></br></p>
+	<p style="margin-left:4.5em">Meaning behind your Insta Username :-<input type="text" name="under"></br><br></p> 
+
+	Current relationahip status :-<input type="text" name="under"></br></br>
+	Sometimes i'm talented at :-<input type="text" name="talent"></br></br>
+	Celebrity Crush :-<input type="text" name="crush"></br></br>
+
+	<p style="margin-left:4.5em">3 Things that makes you happy :-<input type="text" name="happy"></br></p>
+	<p style="margin-left:4.5em">Fav Food :-<input type="text" name="food"></br></p>
+	<p style="margin-left:4.5em">Fav Movie :-<input type="text" name="movie"></br></p>
+
+	<center><input type="submit" value="Done"></center>
+
+</form>
+</body>
+</html>
